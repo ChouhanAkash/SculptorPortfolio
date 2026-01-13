@@ -7,19 +7,19 @@ function Home() {
       id: 1,
       title: 'Ganesh Ji',
       category: 'Clay Idol',
-      image: '/src/assets/DSC07114.jpg',
+      image: '/assets/DSC07114.jpg',
     },
     {
       id: 2,
       title: 'Durga Maa',
       category: 'Clay Idol',
-      image: '/src/assets/DSC07117.jpg',
+      image: '/assets/DSC07117.jpg',
     },
     {
       id: 3,
       title: 'Laxmi Ji',
       category: 'Clay Idol',
-      image: '/src/assets/DSC07121.jpg',
+      image: '/assets/DSC07121.jpg',
     },
   ];
 
@@ -30,7 +30,7 @@ function Home() {
         <div 
           className="absolute inset-0 bg-cover bg-center "
           style={{
-            backgroundImage: 'url(/src/assets/DSC07133.jpg)',
+            backgroundImage: 'url(/assets/DSC07133.jpg)',
           }}
         ></div>
         
@@ -80,7 +80,7 @@ function Home() {
             </div>
             <div className="order-1 lg:order-2 group">
               <img
-                src="/src/assets/DSC07138.jpg"
+                src="/assets/DSC07138.jpg"
                 alt="Jaydeep the Murtikar at work"
                 className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover transition-all duration-500 group-hover:scale-105 group-hover:rotate-2"
               />
@@ -146,10 +146,10 @@ function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              {num: 1, title: 'Preparation', desc: 'Wedging and conditioning the clay to remove air bubbles', image: '/src/assets/DSC07130.jpg'},
-              {num: 2, title: 'Shaping', desc: 'Hand-building or wheel-throwing to create the basic form', image: '/src/assets/Moortikar 1.jpg'},
-              {num: 3, title: 'Detailing', desc: 'Carving, sculpting, and adding intricate surface textures', image: '/src/assets/moortikar 2.jpg'},
-              {num: 4, title: 'Firing', desc: 'Kiln firing to transform soft clay into permanent art', image: '/src/assets/DSC07126.jpg'}
+              {num: 1, title: 'Preparation', desc: 'Wedging and conditioning the clay to remove air bubbles', image: '/assets/DSC07130.jpg'},
+              {num: 2, title: 'Shaping', desc: 'Hand-building or wheel-throwing to create the basic form', image: '/assets/Moortikar 1.jpg'},
+              {num: 3, title: 'Detailing', desc: 'Carving, sculpting, and adding intricate surface textures', image: '/assets/moortikar 2.jpg'},
+              {num: 4, title: 'Firing', desc: 'Kiln firing to transform soft clay into permanent art', image: '/assets/DSC07126.jpg'}
             ].map((step, index) => (
               <div 
                 key={step.num}

@@ -11,11 +11,11 @@ function About() {
   ];
 
   const milestones = [
-    { year: '1995', title: 'Learning Begins', description: 'Started learning murtikar art from elders in Thakurganj', image: '/src/assets/Moortikar 1.jpg' },
-    { year: '2000', title: 'Journey Across India', description: 'Traveled to learn from master craftsmen', image: '/src/assets/moortikar 2.jpg' },
-    { year: '2012', title: 'Workshop Established', description: 'Set up dedicated idol-making workshop', image: '/src/assets/DSC07126.jpg' },
-    { year: '2018', title: 'Natural Materials Commitment', description: 'Exclusively using wood, straw, and pure mud', image: '/src/assets/DSC07130.jpg' },
-    { year: '2026', title: 'Master Murtikar', description: '30+ years serving devotees with divine idols', image: '/src/assets/DSC07138.jpg' },
+    { year: '1995', title: 'Learning Begins', description: 'Started learning murtikar art from elders in Thakurganj', image: '/assets/Moortikar 1.jpg' },
+    { year: '2000', title: 'Journey Across India', description: 'Traveled to learn from master craftsmen', image: '/assets/moortikar 2.jpg' },
+    { year: '2012', title: 'Workshop Established', description: 'Set up dedicated idol-making workshop', image: '/assets/DSC07126.jpg' },
+    { year: '2018', title: 'Natural Materials Commitment', description: 'Exclusively using wood, straw, and pure mud', image: '/assets/DSC07130.jpg' },
+    { year: '2026', title: 'Master Murtikar', description: '30+ years serving devotees with divine idols', image: '/assets/DSC07138.jpg' },
   ];
 
   return (
@@ -37,7 +37,7 @@ function About() {
             </div>
             <div className="group">
               <img
-                src="/src/assets/DSC07138.jpg"
+                src="/assets/DSC07138.jpg"
                 alt="Jaydeep the Murtikar at work"
                 className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover transition-all duration-500 group-hover:scale-105 group-hover:rotate-2"
               />

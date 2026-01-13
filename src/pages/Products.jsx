@@ -14,7 +14,7 @@ function Products() {
       year: '2026',
       dimensions: '2 Feet Height',
       description: 'Handcrafted Ganesh idol in natural clay with intricate details. Perfect for home worship.',
-      image: '/src/assets/DSC07114.jpg',
+      image: '/assets/DSC07114.jpg',
       price: 'Available',
     },
     {
@@ -24,7 +24,7 @@ function Products() {
       year: '2026',
       dimensions: '5 Feet Height',
       description: 'Large Ganesh idol made from pure mud, straw and wood base. Ideal for community celebrations.',
-      image: '/src/assets/DSC07117.jpg',
+      image: '/assets/DSC07117.jpg',
       price: 'Available',
     },
     {
@@ -34,7 +34,7 @@ function Products() {
       year: '2026',
       dimensions: '7 Feet Height',
       description: 'Grand Ganesh idol crafted with devotion. Made for large pandals and celebrations.',
-      image: '/src/assets/DSC07121.jpg',
+      image: '/assets/DSC07121.jpg',
       price: 'Available',
     },
     {
@@ -44,7 +44,7 @@ function Products() {
       year: '2026',
       dimensions: '5 Feet Height',
       description: 'Divine Durga Maa idol with traditional design. Made with natural materials and devotion.',
-      image: '/src/assets/DSC07123.jpg',
+      image: '/assets/DSC07123.jpg',
       price: 'Available',
     },
     {
@@ -54,7 +54,7 @@ function Products() {
       year: '2026',
       dimensions: '7 Feet Height',
       description: 'Majestic Durga Maa idol for Navratri and special occasions. Eco-friendly clay construction.',
-      image: '/src/assets/DSC07126.jpg',
+      image: '/assets/DSC07126.jpg',
       price: 'Available',
     },
     {
@@ -64,7 +64,7 @@ function Products() {
       year: '2026',
       dimensions: '2 Feet Height',
       description: 'Beautiful Laxmi Ji idol for Diwali and prosperity blessings. Made from sacred earth.',
-      image: '/src/assets/DSC07130.jpg',
+      image: '/assets/DSC07130.jpg',
       price: 'Available',
     },
     {
@@ -74,7 +74,7 @@ function Products() {
       year: '2026',
       dimensions: '5 Feet Height',
       description: 'Elegant Laxmi Ji idol with detailed ornamentation. Perfect for temple and home.',
-      image: '/src/assets/DSC07133.jpg',
+      image: '/assets/DSC07133.jpg',
       price: 'Available',
     },
     {
@@ -84,7 +84,7 @@ function Products() {
       year: '2026',
       dimensions: 'Set of 12',
       description: 'Handmade clay diyas for festivals. Natural earthen lamps crafted with care.',
-      image: '/src/assets/DSC07138.jpg',
+      image: '/assets/DSC07138.jpg',
       price: 'Available',
     },
     {
@@ -94,7 +94,7 @@ function Products() {
       year: '2026',
       dimensions: '6" diameter',
       description: 'Large clay diya for special ceremonies and aarti. Traditional design.',
-      image: '/src/assets/Intrvw 2ndcut.01_30_44_29.Still004.jpg',
+      image: '/assets/Intrvw 2ndcut.01_30_44_29.Still004.jpg',
       price: 'Available',
     },
     {
@@ -104,7 +104,7 @@ function Products() {
       year: '2026',
       dimensions: 'Various sizes',
       description: 'Artisan clay diyas with traditional patterns. Made for auspicious occasions.',
-      image: '/src/assets/Intrvw 2ndcut.01_30_46_07.Still003.jpg',
+      image: '/assets/Intrvw 2ndcut.01_30_46_07.Still003.jpg',
       price: 'Available',
     },
     {
@@ -114,7 +114,7 @@ function Products() {
       year: '2026',
       dimensions: '3 Feet Height',
       description: 'Classic Ganesh idol in pure clay. Made with traditional Bihar techniques.',
-      image: '/src/assets/Intrvw 2ndcut.01_31_39_07.Still005.jpg',
+      image: '/assets/Intrvw 2ndcut.01_31_39_07.Still005.jpg',
       price: 'Available',
     },
     {
@@ -124,7 +124,7 @@ function Products() {
       year: '2026',
       dimensions: '2 Feet Height',
       description: 'Compact Durga Maa idol for home worship. Eco-friendly and sacred.',
-      image: '/src/assets/moortikar 2.jpg',
+      image: '/assets/moortikar 2.jpg',
       price: 'Available',
     },
   ];
