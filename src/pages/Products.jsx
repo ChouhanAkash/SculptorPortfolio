@@ -4,127 +4,127 @@ function Products() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedWork, setSelectedWork] = useState(null);
 
-  const categories = ['all', 'terracotta', 'stoneware', 'earthenware', 'decorative', 'functional'];
+  const categories = ['all', 'ganesh', 'durga', 'laxmi', 'Vishwakarma'];
 
   const artworks = [
     {
       id: 1,
-      title: 'Earth Mother',
-      category: 'terracotta',
-      year: '2023',
-      dimensions: '18" x 12" x 24"',
-      description: 'A flowing terracotta sculpture celebrating feminine energy and the earth\'s nurturing power.',
-      image: 'https://images.unsplash.com/photo-1578301978018-3005759f48f7?w=800&h=800&fit=crop',
+      title: 'Ganesh Ji - 2 Feet',
+      category: 'ganesh',
+      year: '2026',
+      dimensions: '2 Feet Height',
+      description: 'Handcrafted Ganesh idol in natural clay with intricate details. Perfect for home worship.',
+      image: '/src/assets/DSC07114.jpg',
       price: 'Available',
     },
     {
       id: 2,
-      title: 'Sacred Vessel',
-      category: 'stoneware',
-      year: '2023',
-      dimensions: '14" x 14" x 20"',
-      description: 'High-fired stoneware pot with ancient-inspired geometric patterns.',
-      image: 'https://images.unsplash.com/photo-1610701076654-b7f71e204703?w=800&h=800&fit=crop',
+      title: 'Ganesh Ji - 5 Feet',
+      category: 'ganesh',
+      year: '2026',
+      dimensions: '5 Feet Height',
+      description: 'Large Ganesh idol made from pure mud, straw and wood base. Ideal for community celebrations.',
+      image: '/src/assets/DSC07117.jpg',
       price: 'Available',
     },
     {
       id: 3,
-      title: 'Ancient Spirits',
-      category: 'earthenware',
-      year: '2022',
-      dimensions: '16" x 10" x 28"',
-      description: 'Hand-built earthenware figure invoking ancestral wisdom.',
-      image: 'https://images.unsplash.com/photo-1615826932727-ed9f182ac73e?w=800&h=800&fit=crop',
-      price: 'Sold',
+      title: 'Ganesh Ji - 7 Feet',
+      category: 'ganesh',
+      year: '2026',
+      dimensions: '7 Feet Height',
+      description: 'Grand Ganesh idol crafted with devotion. Made for large pandals and celebrations.',
+      image: '/src/assets/DSC07121.jpg',
+      price: 'Available',
     },
     {
       id: 4,
-      title: 'Nature\'s Embrace',
-      category: 'decorative',
-      year: '2023',
-      dimensions: '12" x 12" x 16"',
-      description: 'Organic terracotta form celebrating natural curves and texture.',
-      image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&h=800&fit=crop',
+      title: 'Durga Maa - 5 Feet',
+      category: 'durga',
+      year: '2026',
+      dimensions: '5 Feet Height',
+      description: 'Divine Durga Maa idol with traditional design. Made with natural materials and devotion.',
+      image: '/src/assets/DSC07123.jpg',
       price: 'Available',
     },
     {
       id: 5,
-      title: 'Morning Ritual Bowl',
-      category: 'functional',
-      year: '2023',
-      dimensions: '10" diameter x 4" height',
-      description: 'Wheel-thrown stoneware bowl for daily mindfulness practice.',
-      image: 'https://images.unsplash.com/photo-1610224907689-7518922c60c3?w=800&h=800&fit=crop',
+      title: 'Durga Maa - 7 Feet',
+      category: 'durga',
+      year: '2026',
+      dimensions: '7 Feet Height',
+      description: 'Majestic Durga Maa idol for Navratri and special occasions. Eco-friendly clay construction.',
+      image: '/src/assets/DSC07126.jpg',
       price: 'Available',
     },
     {
       id: 6,
-      title: 'Heritage',
-      category: 'terracotta',
-      year: '2021',
-      dimensions: '20" x 15" x 30"',
-      description: 'Traditional terracotta sculpture honoring ancestral craftsmanship.',
-      image: 'https://images.unsplash.com/photo-1594993481084-5f34e820b47f?w=800&h=800&fit=crop',
-      price: 'Sold',
+      title: 'Laxmi Ji - 2 Feet',
+      category: 'laxmi',
+      year: '2026',
+      dimensions: '2 Feet Height',
+      description: 'Beautiful Laxmi Ji idol for Diwali and prosperity blessings. Made from sacred earth.',
+      image: '/src/assets/DSC07130.jpg',
+      price: 'Available',
     },
     {
       id: 7,
-      title: 'Zen Garden Stones',
-      category: 'decorative',
-      year: '2023',
-      dimensions: 'Set of 5, various sizes',
-      description: 'Smooth clay stones with organic glazing for meditation spaces.',
-      image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&h=800&fit=crop',
+      title: 'Laxmi Ji - 5 Feet',
+      category: 'laxmi',
+      year: '2026',
+      dimensions: '5 Feet Height',
+      description: 'Elegant Laxmi Ji idol with detailed ornamentation. Perfect for temple and home.',
+      image: '/src/assets/DSC07133.jpg',
       price: 'Available',
     },
     {
       id: 8,
-      title: 'Harvest Pitcher',
-      category: 'functional',
-      year: '2022',
-      dimensions: '8" x 6" x 12"',
-      description: 'Hand-thrown earthenware pitcher with rustic glaze finish.',
-      image: 'https://images.unsplash.com/photo-1610224907689-7518922c60c3?w=800&h=800&fit=crop',
+      title: 'Traditional Diya Set',
+      category: 'diya',
+      year: '2026',
+      dimensions: 'Set of 12',
+      description: 'Handmade clay diyas for festivals. Natural earthen lamps crafted with care.',
+      image: '/src/assets/DSC07138.jpg',
       price: 'Available',
     },
     {
       id: 9,
-      title: 'Whispers of Time',
-      category: 'earthenware',
-      year: '2021',
-      dimensions: '22" x 18" x 32"',
-      description: 'Weathered earthenware sculpture telling stories through texture.',
-      image: 'https://images.unsplash.com/photo-1615826932727-ed9f182ac73e?w=800&h=800&fit=crop',
-      price: 'Sold',
+      title: 'Large Ceremonial Diya',
+      category: 'diya',
+      year: '2026',
+      dimensions: '6" diameter',
+      description: 'Large clay diya for special ceremonies and aarti. Traditional design.',
+      image: '/src/assets/Intrvw 2ndcut.01_30_44_29.Still004.jpg',
+      price: 'Available',
     },
     {
       id: 10,
-      title: 'Terra Forma',
-      category: 'decorative',
-      year: '2023',
-      dimensions: '24" x 20" x 36"',
-      description: 'Abstract terracotta form exploring earth and sky connection.',
-      image: 'https://images.unsplash.com/photo-1578301978018-3005759f48f7?w=800&h=800&fit=crop',
+      title: 'Decorative Diya Collection',
+      category: 'diya',
+      year: '2026',
+      dimensions: 'Various sizes',
+      description: 'Artisan clay diyas with traditional patterns. Made for auspicious occasions.',
+      image: '/src/assets/Intrvw 2ndcut.01_30_46_07.Still003.jpg',
       price: 'Available',
     },
     {
       id: 11,
-      title: 'Ancient Echo',
-      category: 'stoneware',
-      year: '2022',
-      dimensions: '18" x 16" x 28"',
-      description: 'Coil-built stoneware inspired by ancient civilizations.',
-      image: 'https://images.unsplash.com/photo-1610701076654-b7f71e204703?w=800&h=800&fit=crop',
+      title: 'Ganesh Ji Traditional',
+      category: 'ganesh',
+      year: '2026',
+      dimensions: '3 Feet Height',
+      description: 'Classic Ganesh idol in pure clay. Made with traditional Bihar techniques.',
+      image: '/src/assets/Intrvw 2ndcut.01_31_39_07.Still005.jpg',
       price: 'Available',
     },
     {
       id: 12,
-      title: 'Earth\'s Song',
-      category: 'terracotta',
-      year: '2023',
-      dimensions: '26" x 22" x 40"',
-      description: 'Large terracotta sculpture celebrating the music of nature.',
-      image: 'https://images.unsplash.com/photo-1594993481084-5f34e820b47f?w=800&h=800&fit=crop',
+      title: 'Durga Maa - 2 Feet',
+      category: 'durga',
+      year: '2026',
+      dimensions: '2 Feet Height',
+      description: 'Compact Durga Maa idol for home worship. Eco-friendly and sacred.',
+      image: '/src/assets/moortikar 2.jpg',
       price: 'Available',
     },
   ];
@@ -143,10 +143,10 @@ function Products() {
         </div>
         <div className="container-custom text-center relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-[slideUp_0.8s_ease-out]">
-            Clay <span className="text-terracotta">Gallery</span>
+            Divine Idol <span className="text-terracotta">Collection</span>
           </h1>
           <p className="text-lg md:text-xl text-earth-sand max-w-3xl mx-auto animate-[slideUp_0.8s_ease-out_0.2s_both]">
-            Explore handcrafted clay sculptures spanning terracotta, stoneware, and earthenware
+            Handcrafted clay idols of Ganesh Ji, Durga Maa, Laxmi Ji and traditional diyas - Available in 2ft, 5ft & 7ft
           </p>
         </div>
       </section>
@@ -159,13 +159,13 @@ function Products() {
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`px-6 py-2 rounded-full font-semibold capitalize transition-all duration-300 transform hover:scale-110 ${
+                className={`px-6 py-3 rounded-full font-bold transition-all duration-300 transform hover:scale-110 text-lg ${
                   activeFilter === category
-                    ? 'bg-terracotta text-white shadow-lg scale-110'
+                    ? 'bg-terracotta text-blue shadow-lg scale-110'
                     : 'bg-earth-sand text-earth-dark hover:bg-earth-medium hover:text-white shadow-md'
                 }`}
               >
-                {category}
+                {category === 'all' ? 'All Idols' : category === 'ganesh' ? 'Ganesh' : category === 'durga' ? 'Durga' : category === 'laxmi' ? 'Laxmi' : category === 'diya' ? 'Diya' : category}
               </button>
             ))}
           </div>
@@ -295,13 +295,13 @@ function Products() {
         </div>
         <div className="container-custom text-center relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Commission a <span className="text-terracotta">Custom Piece</span>
+            Order Your <span className="text-terracotta">Divine Idol</span>
           </h2>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto text-earth-sand">
-            Interested in a bespoke clay sculpture tailored to your vision? Let's collaborate to create something unique.
+            Need a custom size or special design for your celebration? Contact Jaydeep for personalized idols.
           </p>
           <a href="/contact" className="bg-terracotta text-white px-8 py-4 rounded-lg hover:bg-earth-dark hover:text-white transition-all duration-300 font-semibold text-lg inline-block shadow-xl hover:shadow-2xl transform hover:scale-110 hover:-rotate-2">
-            Start a Project
+            Place Your Order
           </a>
         </div>
       </section>

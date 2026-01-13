@@ -2,20 +2,20 @@ import React from 'react';
 
 function About() {
   const skills = [
-    { name: 'Hand-Building', level: 95 },
-    { name: 'Wheel Throwing', level: 90 },
-    { name: 'Terracotta Work', level: 92 },
-    { name: 'Glazing & Finishing', level: 88 },
-    { name: 'Kiln Firing', level: 87 },
-    { name: 'Surface Decoration', level: 93 },
+    { name: 'Idol Sculpting', level: 98 },
+    { name: 'Traditional Techniques', level: 95 },
+    { name: 'Clay Preparation', level: 93 },
+    { name: 'Natural Materials', level: 97 },
+    { name: 'Detail Work', level: 92 },
+    { name: 'Sacred Artistry', level: 96 },
   ];
 
   const milestones = [
-    { year: '2010', title: 'First Solo Exhibition', description: 'Showcased terracotta collection at Local Gallery' },
-    { year: '2013', title: 'Master Potter Certification', description: 'Completed advanced training in traditional techniques' },
-    { year: '2016', title: 'Public Installation', description: 'Created large-scale clay sculpture for city park' },
-    { year: '2019', title: 'Studio Workshop Launch', description: 'Opened teaching studio for aspiring clay artists' },
-    { year: '2023', title: 'International Recognition', description: 'Featured in Global Pottery & Sculpture Magazine' },
+    { year: '1995', title: 'Learning Begins', description: 'Started learning murtikar art from elders in Thakurganj', image: '/src/assets/Moortikar 1.jpg' },
+    { year: '2000', title: 'Journey Across India', description: 'Traveled to learn from master craftsmen', image: '/src/assets/moortikar 2.jpg' },
+    { year: '2012', title: 'Workshop Established', description: 'Set up dedicated idol-making workshop', image: '/src/assets/DSC07126.jpg' },
+    { year: '2018', title: 'Natural Materials Commitment', description: 'Exclusively using wood, straw, and pure mud', image: '/src/assets/DSC07130.jpg' },
+    { year: '2026', title: 'Master Murtikar', description: '30+ years serving devotees with divine idols', image: '/src/assets/DSC07138.jpg' },
   ];
 
   return (
@@ -29,16 +29,16 @@ function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-[slideUp_0.8s_ease-out]">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                About The <span className="text-terracotta">Artist</span>
+                Meet Jaydeep - The <span className="text-terracotta">Murtikar</span>
               </h1>
               <p className="text-lg md:text-xl text-earth-sand leading-relaxed">
-                Transforming raw earth into expressive sculptures that honor ancient pottery traditions while embracing contemporary artistic vision.
+                The Artisan of Thakurganj, Bihar - Handcrafting divine idols for over 30 years using sacred traditional techniques
               </p>
             </div>
             <div className="group">
               <img
-                src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&h=800&fit=crop"
-                alt="Artist at work with clay"
+                src="/src/assets/DSC07138.jpg"
+                alt="Jaydeep the Murtikar at work"
                 className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover transition-all duration-500 group-hover:scale-105 group-hover:rotate-2"
               />
             </div>
@@ -55,16 +55,16 @@ function About() {
             </h2>
             <div className="space-y-6 text-lg text-earth-medium leading-relaxed">
               <p className="hover:text-earth-dark transition-colors duration-300">
-                My love affair with clay began in childhood, watching my grandmother mold simple vessels on her potter's wheel. The way her hands guided the spinning earth, coaxing it into elegant forms, seemed like magic. That fascination never left me.
+                For over 30 years, I have been handcrafting divine idols using age-old techniques passed down through generations. My journey began in Thakurganj, Bihar, where I learned the sacred art of murtikar from my elders.
               </p>
               <p className="hover:text-earth-dark transition-colors duration-300">
-                After formal training at the Academy of Ceramic Arts, I spent years studying traditional pottery techniques across different cultures. From Japanese raku to African coil building, each tradition taught me new ways to honor the earth and its potential.
+                My travels across India introduced me to masters of the craft. From the traditional techniques of West Bengal to the intricate styles of Maharashtra, each experience shaped my artistry and deepened my understanding of this sacred work.
               </p>
               <p className="hover:text-earth-dark transition-colors duration-300">
-                Today, my work celebrates the humble beauty of clay. Whether working with terracotta's warm russet tones, stoneware's durability, or earthenware's earthy charm, I create pieces that connect viewers to our oldest artistic tradition.
+                Today, in my small workshop in Thakurganj, I bring gods to life using only natural materials - wood for structure, straw for strength, and sacred mud from the earth. I specialize in creating idols of Ganesh Ji, Durga Maa, Laxmi Ji, and traditional diyas in 2, 5, and 7 feet sizes.
               </p>
               <p className="hover:text-earth-dark transition-colors duration-300">
-                Beyond creating, I'm passionate about keeping these ancient skills alive. Through workshops and mentorship, I help others discover the joy of working with clay, passing on techniques that have survived millennia.
+                Each idol is more than just a statue—it is a reflection of culture, tradition, and devotion. Made for people who want to celebrate faith while respecting the earth. Every piece is crafted with prayer and dedication to preserve our ancient traditions.
               </p>
             </div>
           </div>
@@ -116,8 +116,15 @@ function About() {
                   className="flex flex-col md:flex-row gap-6 items-start group hover:scale-105 transition-all duration-300"
                   style={{animation: `slideUp 0.6s ease-out ${index * 0.15}s both`}}
                 >
-                  <div className="flex-shrink-0 w-24 h-24 bg-terracotta rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:rotate-12 group-hover:scale-110 transition-all duration-300">
-                    {milestone.year}
+                  <div className="flex-shrink-0 w-32 h-32 rounded-full overflow-hidden shadow-lg group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 relative">
+                    <img 
+                      src={milestone.image} 
+                      alt={milestone.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-terracotta bg-opacity-80 flex items-center justify-center">
+                      <span className="text-white font-bold text-2xl">{milestone.year}</span>
+                    </div>
                   </div>
                   <div className="flex-grow bg-earth-sand p-6 rounded-lg shadow-md group-hover:shadow-xl transition-all duration-300">
                     <h3 className="text-xl md:text-2xl font-bold mb-2 text-earth-dark group-hover:text-terracotta transition-colors duration-300">{milestone.title}</h3>
@@ -158,19 +165,18 @@ function About() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
-              { icon: '🏆', title: 'Best Clay Sculptor', org: 'National Pottery Festival 2022' },
-              { icon: '🎨', title: 'Excellence in Terracotta', org: 'International Clay Society 2020' },
-              { icon: '⭐', title: 'Master Artisan Award', org: 'Guild of Ceramic Artists 2019' },
-              { icon: '🌟', title: 'Public Art Recognition', org: 'City Arts Commission 2021' },
-              { icon: '🔥', title: 'Innovation in Firing', org: 'Modern Ceramics Review 2018' },
-              { icon: '💫', title: 'Lifetime Achievement', org: 'Clay Arts Foundation 2023' }
+              { title: '30+ Years Experience', org: 'Master Murtikar of Thakurganj' },
+              { title: 'Traditional Craftsman', org: 'Preserving Ancient Techniques' },
+              { title: '100% Natural Materials', org: 'Only Wood, Straw & Pure Mud' },
+              { title: 'Custom Sizes', org: '2 ft, 5 ft & 7 ft Idols' },
+              { title: 'Sacred Devotion', org: 'Each Idol Made with Prayer' },
+              { title: 'Community Trusted', org: 'Serving Devotees for Decades' }
             ].map((award, index) => (
               <div 
                 key={index}
                 className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:rotate-2"
                 style={{animation: `scaleIn 0.5s ease-out ${index * 0.1}s both`}}
               >
-                <div className="text-4xl mb-4 animate-[float_3s_ease-in-out_infinite]">{award.icon}</div>
                 <h3 className="font-bold text-xl mb-2 text-earth-dark hover:text-terracotta transition-colors duration-300">{award.title}</h3>
                 <p className="text-earth-medium">{award.org}</p>
               </div>

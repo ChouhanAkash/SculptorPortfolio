@@ -14,7 +14,7 @@ function Navbar() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="text-2xl md:text-3xl font-bold text-earth-dark hover:text-terracotta transition-all duration-300 transform hover:scale-105">
-            Clay<span className="text-terracotta">Craft</span>
+            Jaydeep<span className="text-terracotta">Art</span>
           </Link>
 
           {/* Desktop Menu */}

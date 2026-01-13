@@ -5,21 +5,21 @@ function Home() {
   const featuredWorks = [
     {
       id: 1,
-      title: 'Earth Mother',
-      category: 'Terracotta',
-      image: 'https://images.unsplash.com/photo-1578301978018-3005759f48f7?w=800&h=600&fit=crop',
+      title: 'Ganesh Ji',
+      category: 'Clay Idol',
+      image: '/src/assets/DSC07114.jpg',
     },
     {
       id: 2,
-      title: 'Sacred Vessel',
-      category: 'Stoneware Clay',
-      image: 'https://images.unsplash.com/photo-1610701076654-b7f71e204703?w=800&h=600&fit=crop',
+      title: 'Durga Maa',
+      category: 'Clay Idol',
+      image: '/src/assets/DSC07117.jpg',
     },
     {
       id: 3,
-      title: 'Ancient Spirits',
-      category: 'Earthenware',
-      image: 'https://images.unsplash.com/photo-1615826932727-ed9f182ac73e?w=800&h=600&fit=crop',
+      title: 'Laxmi Ji',
+      category: 'Clay Idol',
+      image: '/src/assets/DSC07121.jpg',
     },
   ];
 
@@ -28,9 +28,9 @@ function Home() {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-earth-dark via-earth-medium to-earth-light text-white overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center "
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=1920&h=1080&fit=crop)',
+            backgroundImage: 'url(/src/assets/DSC07133.jpg)',
           }}
         ></div>
         
@@ -44,10 +44,10 @@ function Home() {
         
         <div className="relative z-10 container-custom text-center px-4">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-[slideUp_1s_ease-out]">
-            Molding Earth Into Art
+            पवित्र मिट्टी में दिव्य मूर्तियाँ
           </h1>
           <p className="text-lg md:text-xl lg:text-2xl mb-8 max-w-3xl mx-auto text-earth-sand animate-[slideUp_1s_ease-out_0.2s_both]">
-            Handcrafted clay sculptures celebrating the timeless beauty of earth and tradition
+            Handcrafted divine idols using age-old techniques - Celebrating faith while respecting the earth
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-[slideUp_1s_ease-out_0.4s_both]">
             <Link to="/products" className="btn-primary transform hover:rotate-1">
@@ -66,13 +66,13 @@ function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 animate-[slideUp_0.8s_ease-out]">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-earth-dark">
-                The Art of <span className="text-terracotta">Clay</span>
+                Meet Jaydeep - The <span className="text-terracotta">Murtikar</span>
               </h2>
               <p className="text-lg text-earth-medium mb-6 leading-relaxed">
-                For over 15 years, I've been transforming humble earth into expressions of beauty. Each sculpture begins as raw clay, shaped by hand, and brought to life through the ancient art of firing.
+                For over 30 years, Jaydeep has been handcrafting divine idols using age-old techniques passed down through generations. His journeys across India introduced him to masters of the craft, and each experience shaped his artistry.
               </p>
               <p className="text-lg text-earth-medium mb-8 leading-relaxed">
-                Working with terracotta, stoneware, and earthenware, I create pieces that honor traditional pottery techniques while exploring contemporary forms and expressions.
+                Today, in his small workshop in Thakurganj, Bihar, he brings gods to life using only natural materials like wood, straw, and mud. Each idol is more than just a statue—it is a reflection of culture, tradition, and devotion.
               </p>
               <Link to="/about" className="btn-outline transform hover:rotate-1">
                 Discover My Journey
@@ -80,8 +80,8 @@ function Home() {
             </div>
             <div className="order-1 lg:order-2 group">
               <img
-                src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?w=800&h=800&fit=crop"
-                alt="Clay sculptor at work"
+                src="/src/assets/DSC07138.jpg"
+                alt="Jaydeep the Murtikar at work"
                 className="rounded-lg shadow-2xl w-full h-[400px] md:h-[500px] object-cover transition-all duration-500 group-hover:scale-105 group-hover:rotate-2"
               />
             </div>
@@ -146,18 +146,25 @@ function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              {num: 1, title: 'Preparation', desc: 'Wedging and conditioning the clay to remove air bubbles'},
-              {num: 2, title: 'Shaping', desc: 'Hand-building or wheel-throwing to create the basic form'},
-              {num: 3, title: 'Detailing', desc: 'Carving, sculpting, and adding intricate surface textures'},
-              {num: 4, title: 'Firing', desc: 'Kiln firing to transform soft clay into permanent art'}
+              {num: 1, title: 'Preparation', desc: 'Wedging and conditioning the clay to remove air bubbles', image: '/src/assets/DSC07130.jpg'},
+              {num: 2, title: 'Shaping', desc: 'Hand-building or wheel-throwing to create the basic form', image: '/src/assets/Moortikar 1.jpg'},
+              {num: 3, title: 'Detailing', desc: 'Carving, sculpting, and adding intricate surface textures', image: '/src/assets/moortikar 2.jpg'},
+              {num: 4, title: 'Firing', desc: 'Kiln firing to transform soft clay into permanent art', image: '/src/assets/DSC07126.jpg'}
             ].map((step, index) => (
               <div 
                 key={step.num}
                 className="text-center p-6 group hover:bg-earth-sand rounded-lg transition-all duration-300"
                 style={{animation: `scaleIn 0.5s ease-out ${index * 0.15}s both`}}
               >
-                <div className="w-20 h-20 bg-terracotta rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
-                  <span className="text-3xl font-bold text-white">{step.num}</span>
+                <div className="w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg overflow-hidden relative">
+                  <img 
+                    src={step.image} 
+                    alt={step.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-terracotta bg-opacity-70 flex items-center justify-center">
+                    <span className="text-3xl font-bold text-white">{step.num}</span>
+                  </div>
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-earth-dark group-hover:text-terracotta transition-colors duration-300">{step.title}</h3>
                 <p className="text-earth-medium">
