@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,24 +23,24 @@ function Footer() {
             <h4 className="text-xl font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="text-earth-clay hover:text-terracotta transition-all duration-300 inline-block hover:translate-x-2">
+                <Link to="/" className="text-earth-clay hover:text-terracotta transition-all duration-300 inline-block hover:translate-x-2">
                   → Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/about" className="text-earth-clay hover:text-terracotta transition-all duration-300 inline-block hover:translate-x-2">
+                <Link to="/about" className="text-earth-clay hover:text-terracotta transition-all duration-300 inline-block hover:translate-x-2">
                   → About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/products" className="text-earth-clay hover:text-terracotta transition-all duration-300 inline-block hover:translate-x-2">
+                <Link to="/products" className="text-earth-clay hover:text-terracotta transition-all duration-300 inline-block hover:translate-x-2">
                   → Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-earth-clay hover:text-terracotta transition-all duration-300 inline-block hover:translate-x-2">
+                <Link to="/contact" className="text-earth-clay hover:text-terracotta transition-all duration-300 inline-block hover:translate-x-2">
                   → Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
